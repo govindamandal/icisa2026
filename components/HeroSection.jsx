@@ -5,7 +5,7 @@ export default function HeroSection() {
       id="hero"
       style={{
         backgroundImage:
-          'linear-gradient(rgba(233, 233, 245, 0.7), rgba(233, 233, 245, 0.8)), url("/assets/hero-bg.jpg")'
+          'linear-gradient(rgba(233, 233, 245, 0.7), rgba(233, 233, 245, 0.8)), url("https://govindamandal.github.io/icisa2026/assets/")'
           
       }}
     >

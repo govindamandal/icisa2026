@@ -18,7 +18,7 @@ function Header() {
                 decoding="async"
                 className="object-contain"
                 style={{ color: 'transparent', height: '120px' }}
-                src="/assets/NIT-Delhi_Logo.png"
+                src="https://govindamandal.github.io/icisa2026/assets/NIT-Delhi_Logo.png"
             />
         </a>
 
@@ -26,7 +26,7 @@ function Header() {
           {[
             {
               href: 'https://www.elsevier.com/en-in',
-              src: '/assets/elsevier-logo.svg',
+              src: 'https://govindamandal.github.io/icisa2026/assets/elsevier-logo.svg',
               width: 148,
               height: 70,
               alt: 'ELSEVIER',
