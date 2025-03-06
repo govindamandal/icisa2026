@@ -30,14 +30,12 @@ export default function HeroSection() {
                 </span>
               </h1>
               <h1 className="text-center text-3xl text-black md:text-5xl mt-4">
-                <p className="font-bold mt-4">
+                <div className="font-bold mt-4">
                   <span className="text-blue-800">I</span>ntelligent{" "}
                   <span className="text-blue-800">S</span>ystem{" "}
-                    <p className="font-bold text-center text-lg text-black md:text-xl my-2">
-                        and
-                    </p>
+                    <p className="font-bold text-center text-lg text-black md:text-xl my-2">and</p>
                   <span className="text-blue-800">A</span>pplications <br />
-                </p>
+                </div>
               </h1>
               <p className="font-bold text-center text-lg text-black md:text-2xl mt-4 mb-2">
                 29 <sup>th</sup> - 31 <sup>st</sup> May, 2026

@@ -26,9 +26,9 @@ function Header() {
           {[
             {
               href: 'https://www.elsevier.com/en-in',
-              src: 'https://govindamandal.github.io/icisa2026/assets/elsevier-logo.svg',
-              width: 148,
-              height: 70,
+              src: 'https://govindamandal.github.io/icisa2026/assets/Elsevier.png',
+              width: 160,
+              height: 160,
               alt: 'ELSEVIER',
             },
             // {
