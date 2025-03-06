@@ -46,18 +46,19 @@ function About() {
             National Education Policy (NEP) 2020 for current batches of
             students. <br />
           </p>
-        </div>
-            <div class="flex-1 p-8">
-            <Image
-                loading="lazy"
-                width="6000"
-                height="4000"
-                decoding="async"
-                data-nimg="1"
-                className="object-cover h-5/6"
-                src="https://govindamandal.github.io/icisa2026/assets/nitd_acad.webp"
-                style="color: transparent;"
-            />
+          <div className="flex-1 p-8">
+                <Image
+                    loading="lazy"
+                    width="6000"
+                    height="4000"
+                    decoding="async"
+                    data-nimg="1"
+                    className="object-cover h-5/6"
+                    src="https://govindamandal.github.io/icisa2026/assets/nitd_acad.webp"
+                    alt="About NIT Delhi"
+                    style={{ color: "transparent", height: 'auto', width: 'auto'}}
+                />
+            </div>
         </div>
       </div>
     </section>
