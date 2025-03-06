@@ -1,6 +1,10 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+
+const rootPath = window.location.host === 'localhost:3000' ? '/' : '/icisa2026/'
 
 function Header() {
   return (
@@ -19,7 +23,7 @@ function Header() {
                 decoding="async"
                 className="object-contain"
                 style={{ color: 'transparent', height: '120px' }}
-                src="https://govindamandal.github.io/icisa2026/assets/NIT-Delhi_Logo.png"
+                src={`${rootPath}assets/NIT-Delhi_Logo.png`}
             />
         </Link>
 
@@ -27,7 +31,7 @@ function Header() {
           {[
             {
               href: 'https://www.elsevier.com/en-in',
-              src: 'https://govindamandal.github.io/icisa2026/assets/Elsevier.png',
+              src: `${rootPath}assets/Elsevier.png`,
               width: 160,
               height: 160,
               alt: 'ELSEVIER',
@@ -88,28 +92,28 @@ function Header() {
             <div className="bg-primaryDark absolute md:static py-1.5 px-6 left-0 w-full md:w-auto mx-auto">
                 <ul className=" md:flex md:items-center md:justify-between">
                     <li className="my-6 md:my-0">
-                        <Link className="uppercase text-md font-medium hover:text-primary20" href="/">Home</Link>
+                        <Link className="uppercase text-md font-medium hover:text-primary20" href={rootPath}>Home</Link>
                     </li>
                     <li className="my-6 md:my-0">
-                        <Link className="uppercase text-md font-medium hover:text-primary20" href="/about">About</Link>
+                        <Link className="uppercase text-md font-medium hover:text-primary20" href={`${rootPath}about`}>About</Link>
                     </li>
                     <li className="my-6 md:my-0">
                         <Link className="uppercase text-md font-medium hover:text-primary20" href="/registration">Registration</Link>
                     </li>
                     <li className="my-6 md:my-0">
-                        <Link className="uppercase text-md font-medium hover:text-primary20" href="/submissions">Submission</Link>
+                        <Link className="uppercase text-md font-medium hover:text-primary20" href={`${rootPath}submissions`}>Submission</Link>
                     </li>
                     <li className="my-6 md:my-0">
-                        <Link className="uppercase text-md font-medium hover:text-primary20" href="/tracks">Tracks</Link>
+                        <Link className="uppercase text-md font-medium hover:text-primary20" href={`${rootPath}tracks`}>Tracks</Link>
                     </li>
                     <li className="my-6 md:my-0">
-                        <Link className="uppercase text-md font-medium hover:text-primary20" href="/speakers">Speakers</Link>
+                        <Link className="uppercase text-md font-medium hover:text-primary20" href={`${rootPath}speakers`}>Speakers</Link>
                     </li>
                     <li className="my-6 md:my-0">
-                        <Link className="uppercase text-md font-medium hover:text-primary20" href="/committees">Committees</Link>
+                        <Link className="uppercase text-md font-medium hover:text-primary20" href={`${rootPath}committees`}>Committees</Link>
                     </li>
                     <li className="my-6 md:my-0">
-                        <Link className="uppercase text-md font-medium hover:text-primary20" href="/sponsors">Supporter</Link>
+                        <Link className="uppercase text-md font-medium hover:text-primary20" href={`${rootPath}sponsors`}>Supporter</Link>
                     </li>
                 </ul>
             </div>
