@@ -7,8 +7,11 @@ import React, { useEffect, useState } from 'react';
 function Header() {
   const [rootPath, setRootPath] = useState('/');
   useEffect(() => {
-    const path = window.location.host === "localhost:3000" ? "/" : "/icisa2026/";
-    setRootPath(path);
+    if (window.location.host) {
+        setRootPath('/');
+    } else {
+        setRootPath('/icisa2026/')
+    }
   }, []);
   return (
     <div className="w-full">
