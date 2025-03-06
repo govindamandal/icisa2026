@@ -1,11 +1,12 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 function Header() {
   return (
     <div className="w-full">
       <div className="flex space-x-6 items-center justify-between">
-        <a
+        <Link
           href="https://nitdelhi.ac.in/"
           target="_blank"
           rel="noopener noreferrer"
@@ -20,7 +21,7 @@ function Header() {
                 style={{ color: 'transparent', height: '120px' }}
                 src="https://govindamandal.github.io/icisa2026/assets/NIT-Delhi_Logo.png"
             />
-        </a>
+        </Link>
 
         <div className="flex items-center">
           {[
@@ -53,7 +54,7 @@ function Header() {
             //   alt: 'KCET',
             // },
           ].map((item, index) => (
-            <a key={index} href={item.href} target="_blank" rel="noopener noreferrer">
+            <Link key={index} href={item.href} target="_blank" rel="noopener noreferrer">
               <Image
                 alt={item.alt}
                 loading="lazy"
@@ -64,7 +65,7 @@ function Header() {
                 style={{ color: 'transparent' }}
                 src={item.src}
               />
-            </a>
+            </Link>
           ))}
 
           <div className="md:hidden">
@@ -87,28 +88,28 @@ function Header() {
             <div className="bg-primaryDark absolute md:static py-1.5 px-6 left-0 w-full md:w-auto mx-auto">
                 <ul className=" md:flex md:items-center md:justify-between">
                     <li className="my-6 md:my-0">
-                        <a className="uppercase text-md font-medium hover:text-primary20" href="/">Home</a>
+                        <Link className="uppercase text-md font-medium hover:text-primary20" href="/">Home</Link>
                     </li>
                     <li className="my-6 md:my-0">
-                        <a className="uppercase text-md font-medium hover:text-primary20" href="/about">About</a>
+                        <Link className="uppercase text-md font-medium hover:text-primary20" href="/about">About</Link>
                     </li>
                     <li className="my-6 md:my-0">
-                        <a className="uppercase text-md font-medium hover:text-primary20" href="/registration">Registration</a>
+                        <Link className="uppercase text-md font-medium hover:text-primary20" href="/registration">Registration</Link>
                     </li>
                     <li className="my-6 md:my-0">
-                        <a className="uppercase text-md font-medium hover:text-primary20" href="/submissions">Submission</a>
+                        <Link className="uppercase text-md font-medium hover:text-primary20" href="/submissions">Submission</Link>
                     </li>
                     <li className="my-6 md:my-0">
-                        <a className="uppercase text-md font-medium hover:text-primary20" href="/tracks">Tracks</a>
+                        <Link className="uppercase text-md font-medium hover:text-primary20" href="/tracks">Tracks</Link>
                     </li>
                     <li className="my-6 md:my-0">
-                        <a className="uppercase text-md font-medium hover:text-primary20" href="/speakers">Speakers</a>
+                        <Link className="uppercase text-md font-medium hover:text-primary20" href="/speakers">Speakers</Link>
                     </li>
                     <li className="my-6 md:my-0">
-                        <a className="uppercase text-md font-medium hover:text-primary20" href="/committees">Committees</a>
+                        <Link className="uppercase text-md font-medium hover:text-primary20" href="/committees">Committees</Link>
                     </li>
                     <li className="my-6 md:my-0">
-                        <a className="uppercase text-md font-medium hover:text-primary20" href="/sponsors">Supporter</a>
+                        <Link className="uppercase text-md font-medium hover:text-primary20" href="/sponsors">Supporter</Link>
                     </li>
                 </ul>
             </div>

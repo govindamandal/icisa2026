@@ -5,8 +5,7 @@ export default function HeroSection() {
       id="hero"
       style={{
         backgroundImage:
-          'linear-gradient(rgba(233, 233, 245, 0.7), rgba(233, 233, 245, 0.8)), url("https://govindamandal.github.io/icisa2026/assets/hero-bg.jpg")'
-          
+          'linear-gradient(rgba(233, 233, 245, 0.7), rgba(233, 233, 245, 0.8)), url("https://govindamandal.github.io/icisa2026/assets/hero-bg.jpg")',
       }}
     >
       <div className="container relative flex flex-col-reverse md:flex-row justify-center items-start px-6 mx-auto pt-12 space-y-0 md:justify-start">
@@ -33,7 +32,9 @@ export default function HeroSection() {
                 <div className="font-bold mt-4">
                   <span className="text-blue-800">I</span>ntelligent{" "}
                   <span className="text-blue-800">S</span>ystem{" "}
-                    <p className="font-bold text-center text-lg text-black md:text-xl my-2">and</p>
+                  <p className="font-bold text-center text-lg text-black md:text-xl my-2">
+                    and
+                  </p>
                   <span className="text-blue-800">A</span>pplications <br />
                 </div>
               </h1>
@@ -41,12 +42,22 @@ export default function HeroSection() {
                 29 <sup>th</sup> - 31 <sup>st</sup> May, 2026
               </p>
               <p className="text-center text-base text-black md:text-lg">
-              <span>National Institute of Technology Delhi, </span>
-              <span>New Delhi, India</span>
+                <span>National Institute of Technology Delhi, </span>
+                <span>New Delhi, India</span>
               </p>
             </div>
           </div>
           <div className="flex justify-center"></div>
+        </div>
+      </div>
+      <div className="address-card">
+        <h2 className="AddressCard_addressTitle__fk3j6">Venue</h2>
+        <div>
+          <p className="AddressCard_addressText__lOxom">
+            Department of Computer Science &amp; Engineering <br />{" "}
+            Administrative Block, National Institute of Technology Delhi <br />
+            Plot No. FA7, Zone, P1, GT Karnal Road, Delhi, 110036{" "}
+          </p>
         </div>
       </div>
     </section>
