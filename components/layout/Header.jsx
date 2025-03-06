@@ -2,11 +2,14 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
-
-const rootPath = window.location.host === 'localhost:3000' ? '/' : '/icisa2026/'
+import React, { useEffect, useState } from 'react';
 
 function Header() {
+  const [rootPath, setRootPath] = useState('/');
+  useEffect(() => {
+    const path = window.location.host === "localhost:3000" ? "/" : "/icisa2026/";
+    setRootPath(path);
+  }, []);
   return (
     <div className="w-full">
       <div className="flex space-x-6 items-center justify-between">

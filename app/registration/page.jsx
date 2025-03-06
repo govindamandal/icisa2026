@@ -1,7 +1,13 @@
+'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 function RegistrationPage() {
+    const [rootPath, setRootPath] = useState('/');
+      useEffect(() => {
+        const path = window.location.host === "localhost:3000" ? "/" : "/icisa2026/";
+        setRootPath(path);
+      }, []);
   return (
     <section>
         <div className="container mx-auto px-12 sm:px-6 py-4">
@@ -37,7 +43,7 @@ function RegistrationPage() {
                     height="16"
                     decoding="async"
                     data-nimg="1" 
-                    src="https://govindamandal.github.io/icisa2026/assets/indian.webp"
+                    src={`${rootPath}assets/indian.webp`}
                     style={{ color: "transparent", height: "auto", width: "auto" }}
                 />
             </div>
